@@ -1,21 +1,38 @@
-# Fruit-and-Vegetable-Image-Classification
-This repository contains a Computer Vision solution for Case Study 03. The goal is to build a machine learning model that classifies images into two main categories: Fruits and Vegetables.
+This repository presents a binary image classification model that categorizes food items into Fruits and Vegetables using deep learning.
 
 🚀 Project Overview
-The project involves processing a dataset of ~36 different food items and grouping them into binary classes. I used Transfer Learning with the MobileNetV2 architecture to achieve high accuracy efficiently.
-📁 Dataset Categories
-Fruits: Banana, Apple, Pear, Grapes, Orange, Kiwi, Watermelon, Pomegranate, Pineapple, Mango.
-Vegetables: Cucumber, Carrot, Capsicum, Onion, Potato, Lemon, Tomato, Radish, Beetroot, Cabbage, Lettuce, Spinach, Soybean, Cauliflower, Bell Pepper, Chilly, Pepper, Turnip, Corn, Sweetcorn, Sweet Potato, Paprika, Jalapeño, Ginger, Garlic, Peas, Eggplant.
+
+The objective is to classify images from a dataset containing ~36 distinct food categories into two primary classes: Fruits and Vegetables.
+
+To achieve high performance with limited training time, Transfer Learning was applied using the MobileNetV2 architecture, leveraging pre-trained ImageNet weights.
+
+📁 Dataset Structure
+
+Fruits:
+Banana, Apple, Pear, Grapes, Orange, Kiwi, Watermelon, Pomegranate, Pineapple, Mango
+
+Vegetables:
+Cucumber, Carrot, Capsicum, Onion, Potato, Lemon, Tomato, Radish, Beetroot, Cabbage, Lettuce, Spinach, Soybean, Cauliflower, Bell Pepper, Chilly, Pepper, Turnip, Corn, Sweetcorn, Sweet Potato, Paprika, Jalapeño, Ginger, Garlic, Peas, Eggplant
+
 🛠️ Tech Stack
 Language: Python
 Libraries: TensorFlow, Keras, Matplotlib, Kagglehub, OS, Shutil
 Model: MobileNetV2 (Pre-trained on ImageNet)
-📝 Steps Performed
-Data Loading: Used kagglehub to fetch the dataset directly into the environment.
-Data Reorganization: Automated script to map 36 sub-folders into the required binary "Fruits" and "Vegetables" structure.
-Preprocessing: Resized images to 224x224 and applied normalization.
-Model Building: Implemented Transfer Learning to leverage pre-trained features.
-Training: Trained the model and monitored accuracy/loss.
-Visualization: Plotted training results to evaluate performance.
+⚙️ Workflow
+Data Acquisition
+Dataset fetched directly using kagglehub
+Data Reorganization
+Automated script used to restructure 36 classes into 2 categories
+Preprocessing
+Image resizing to 224×224
+Pixel normalization for improved model convergence
+Model Development
+Applied Transfer Learning with MobileNetV2
+Fine-tuned layers for classification task
+Training & Evaluation
+Model trained with monitoring of accuracy and loss metrics
+Visualization
+Training performance visualized using graphs
 📊 Results
-The model's performance, including accuracy and loss graphs, can be viewed directly within the notebook file.
+
+The model achieves high classification accuracy, with training and validation performance visualized in the notebook through accuracy and loss curves.
